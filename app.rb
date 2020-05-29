@@ -15,6 +15,6 @@ class App < Sinatra::Base
     @session << params.to_s
     @item = params[:item]
     
-    erb :index
+    return @item
   end
 end
