@@ -13,5 +13,7 @@ class App < Sinatra::Base
   
   get 'checkout' do
     @session << params.to_s
+    
+    return params[:item]
   end
 end
